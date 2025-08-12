@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Directory</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>User Profile Directory</h1>
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search by Name">
+                    <button id="clearSSearch" class="hidden">x</button>
+                </div>
+                <div class="filters">
+                    <select id="cityFilter"> 
+                         <option value="">All Cities</option> 
+                        </select>
+                    <button id="darkModeToggle">darkMode</button>
+                </div>
+            </div>
+        </header>
+        <div id="loading" class="status">
+            <div class="spinner"></div>
+            <p>Loading users...</p>
+        </div>
+        <div id="error" class="status hidden">
+            <p>Failed to load user data. Please try again later.</p>
+            <button id="retryButton">Retry</button>
+        </div>
+        <div id="noResults" class="status hidden">
+            <p>No users found matching your criteria.</p>
+        </div>
+        <div id="userGrid" class="hidden">
+            <!-- User cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
