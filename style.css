@@ -29,7 +29,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
+    background-color: rgb(247, 180, 157);
     color: var(--text-color);
     transition: --background-color 0.3s, color 0.3s;
 }
@@ -111,6 +111,10 @@ select {
     cursor: pointer;
 }
 
+#darkModeToggle:hover {
+    background-color: rgb(210, 204, 204);
+}
+
 
 /* Status Messages */
 
@@ -146,6 +150,7 @@ select {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    background-color: rgb(247, 180, 157);
 }
 
 .user-card {
